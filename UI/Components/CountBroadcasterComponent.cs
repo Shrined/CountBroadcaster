@@ -8,26 +8,32 @@ namespace LiveSplit.UI.Components
     class CountBroadcasterComponent : LogicComponent
     {
 
+        Control control = new Control();
+
         public CountBroadcasterComponent(LiveSplitState state)
         {
             new CountBroadcaster(state);
+            System.Threading.Tasks.Task.Factory.StartNew(() =>
+            {
+                CountBroadcasterServer.Instance.startServer();
+            });
         }
 
         public override string ComponentName => "Count Broadcaster";
 
         public override void Dispose()
         {
-            CountBroadcasterServer.StopWebServer();
+            CountBroadcasterServer.Instance.stopServer();
         }
 
         public override XmlNode GetSettings(XmlDocument document)
         {
-            return null;
+            return document.CreateElement("Settings");
         }
 
         public override Control GetSettingsControl(LayoutMode mode)
         {
-            return null;
+            return control;
         }
 
         public override void SetSettings(XmlNode settings)

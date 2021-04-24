@@ -2,18 +2,16 @@
 
 namespace LiveSplit.UI.Components
 {
-    class CountBroadcaster
+    public class CountBroadcaster
     {
+        private static LiveSplitState state;
 
-        private LiveSplitState state;
-
-        public CountBroadcaster(LiveSplitState state)
+        public CountBroadcaster(LiveSplitState liveSplitState)
         {
-            this.state = state;
-            CountBroadcasterServer.StartWebServer(this);
+            state = liveSplitState;
         }
 
-        public int getNumOfAttemps()
+        public static int getNumOfAttemps()
         {
             return state.Run.AttemptCount;
         }
