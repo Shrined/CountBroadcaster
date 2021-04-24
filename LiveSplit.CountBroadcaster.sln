@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveSplit.CountBroadcaster", "LiveSplit.CountBroadcaster.csproj", "{D5C74173-B068-4F62-8491-9C3BE430F0DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5C74173-B068-4F62-8491-9C3BE430F0DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C74173-B068-4F62-8491-9C3BE430F0DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C74173-B068-4F62-8491-9C3BE430F0DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C74173-B068-4F62-8491-9C3BE430F0DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9547FB2E-C50D-4EF2-A98C-647813EF2B26}
+	EndGlobalSection
+EndGlobal
