@@ -1,8 +1,6 @@
 ﻿using LiveSplit.Model;
-using LiveSplit.UI.Components;
-using System.Net;
 
-namespace LiveSplit.Components
+namespace LiveSplit.UI.Components
 {
     class CountBroadcaster
     {

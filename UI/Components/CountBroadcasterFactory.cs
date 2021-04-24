@@ -1,8 +1,7 @@
 ﻿using System;
 using LiveSplit.Model;
-using LiveSplit.UI.Components;
 
-namespace LiveSplit.Components
+namespace LiveSplit.UI.Components
 {
     class CountBroadcasterFactory : IComponentFactory
     {

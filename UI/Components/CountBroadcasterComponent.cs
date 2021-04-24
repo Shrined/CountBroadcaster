@@ -1,11 +1,9 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 using System.Xml;
 using LiveSplit.Model;
-using LiveSplit.UI;
-using LiveSplit.UI.Components;
 
-namespace LiveSplit.Components
+
+namespace LiveSplit.UI.Components
 {
     class CountBroadcasterComponent : LogicComponent
     {
@@ -15,7 +13,7 @@ namespace LiveSplit.Components
             new CountBroadcaster(state);
         }
 
-        public override string ComponentName => throw new NotImplementedException();
+        public override string ComponentName => "Count Broadcaster";
 
         public override void Dispose()
         {
@@ -24,22 +22,19 @@ namespace LiveSplit.Components
 
         public override XmlNode GetSettings(XmlDocument document)
         {
-            throw new NotImplementedException();
+            return null;
         }
 
         public override Control GetSettingsControl(LayoutMode mode)
         {
-            throw new NotImplementedException();
+            return null;
         }
 
         public override void SetSettings(XmlNode settings)
         {
-            throw new NotImplementedException();
         }
 
-        public override void Update(IInvalidator invalidator, LiveSplitState state, float width, float height, LayoutMode mode)
-        {
-            throw new NotImplementedException();
-        }
+        public override void Update(IInvalidator invalidator, LiveSplitState state, float width, float height, 
+            LayoutMode mode) { }
     }
 }

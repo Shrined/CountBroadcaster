@@ -1,10 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Net;
-using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using LiveSplit.Components;
 
 namespace LiveSplit.UI.Components
 {
